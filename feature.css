@@ -1,0 +1,71 @@
+.feature {
+  background-color: var(--dark);
+  padding-top: 137px;
+  padding-bottom: 106px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.feature_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+.feature_title {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: calc(64 / 56);
+  text-transform: uppercase;
+  max-width: 372px;
+  color: #fff;
+}
+
+.feature_desc {
+  max-width: 570px;
+}
+
+.feature_list {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.feature_item {
+  width: 570px;
+  padding: 48px 32px 48px 48px;
+  background-color: #9013fe;
+}
+.feature_item--green {
+  background-color: #417505;
+}
+
+.feature_item_title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #fff;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.feature-dots {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.feature-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 100rem;
+  background-color: #595959;
+}
+
+.feature-dots span.active {
+  background-color: #9013fe;
+}

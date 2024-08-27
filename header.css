@@ -28,9 +28,10 @@
   font-family: "Inknut Antiqua", serif;
   font-weight: 900;
   font-size: 72px;
-  line-height: 80/72;
+  line-height: calc(80 / 72);
   max-width: 724px;
   margin-top: 153px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 }
 
@@ -60,7 +61,7 @@
   width: 570px;
   background-color: var(--orange);
   position: absolute;
-  top: 360px;
+  top: 320px;
   right: 220px;
   z-index: -1;
   border-radius: 5px;
@@ -68,7 +69,7 @@
 
 .header_dots {
   position: absolute;
-  top: 30%;
+  top: 35%;
   right: 8%;
 }
 

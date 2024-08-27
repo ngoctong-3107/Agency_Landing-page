@@ -14,7 +14,7 @@
   font-family: "Inknut Antiqua", serif;
   font-weight: 900;
   font-size: 56px;
-  line-height: 64/56;
+  line-height: calc(64 / 56);
   text-transform: uppercase;
   margin-bottom: 34px;
 }
