@@ -66,6 +66,12 @@
   border-radius: 5px;
 }
 
+.header_dots {
+  position: absolute;
+  top: 30%;
+  right: 8%;
+}
+
 .header_button {
   display: flex;
   align-items: center;
@@ -73,14 +79,15 @@
   position: absolute;
   bottom: -144px;
 }
-.header_button-prev,
-.header_button-next {
+.header_button-control {
+  width: 48px;
+  height: 48px;
+  background-color: var(--orange);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--orange);
-  padding: 1.6rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .header_button-page {

@@ -22,3 +22,15 @@ body {
   margin: 0 auto;
   padding-inline: 2rem;
 }
+
+.button {
+  padding: 1.5rem 4rem;
+  color: var(--dark);
+  border-radius: 5px;
+}
+
+.button--primary {
+  color: white;
+  background-color: var(--orange);
+  text-transform: uppercase;
+}
