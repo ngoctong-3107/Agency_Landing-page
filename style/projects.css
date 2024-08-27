@@ -1,0 +1,16 @@
+.projects {
+  margin-block: 105px 112px;
+}
+
+.projects_header {
+  padding-bottom: 8.5rem;
+  border-bottom: 2px solid var(--dark);
+}
+
+.projects_title {
+  max-width: 435px;
+}
+
+.projects_desc {
+  color: rgba(17, 17, 17, 0.5);
+}
