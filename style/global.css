@@ -27,6 +27,7 @@ body {
   padding: 1.5rem 4rem;
   color: var(--dark);
   border-radius: 5px;
+  line-height: 18.75px;
 }
 
 .button--primary {
