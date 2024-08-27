@@ -34,3 +34,30 @@ body {
   background-color: var(--orange);
   text-transform: uppercase;
 }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-desc {
+  max-width: 570px;
+}
+
+.section-title {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: calc(64 / 56);
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
