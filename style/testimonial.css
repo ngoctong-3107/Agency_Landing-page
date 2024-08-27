@@ -1,0 +1,11 @@
+.testimonial {
+  padding-block: 153px 117px;
+  background-color: var(--dark);
+  color: #fff;
+  position: relative;
+}
+
+.testimonial_title {
+  max-width: 455px;
+  margin-bottom: 34px;
+}

@@ -70,7 +70,7 @@
 .header_button {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   position: absolute;
   bottom: -144px;
 }
