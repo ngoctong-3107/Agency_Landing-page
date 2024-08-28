@@ -23,7 +23,7 @@
   padding: 48px 32px 48px 48px;
   background-color: #9013fe;
 }
-.feature_item--green {
+.feature_item:nth-child(2n + 2) {
   background-color: #417505;
 }
 
@@ -49,6 +49,7 @@
   height: 6px;
   border-radius: 100rem;
   background-color: #595959;
+  cursor: pointer;
 }
 
 .feature-dots span.active {

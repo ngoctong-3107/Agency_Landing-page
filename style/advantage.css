@@ -49,3 +49,17 @@
 .advantage_dots--bottom {
   top: 53%;
 }
+
+.advantage_play {
+  width: 110px;
+  height: 110px;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  cursor: pointer;
+}

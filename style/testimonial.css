@@ -3,7 +3,6 @@
   background-color: var(--dark);
   color: #fff;
   position: relative;
-  /* overflow-x: hidden; */
 }
 
 .testimonial_title {
@@ -31,7 +30,7 @@
   border-radius: 5px;
 }
 
-.testimonial_item:nth-child(n + 2) {
+.testimonial_item:nth-child(2n + 2) {
   background-color: #9013fe;
 }
 
