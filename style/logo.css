@@ -1,0 +1,11 @@
+.tools {
+  margin-block: 320px 103px;
+}
+.tools_wrapper {
+  border-top: 2px solid var(--dark);
+  border-bottom: 2px solid var(--dark);
+  padding-block: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

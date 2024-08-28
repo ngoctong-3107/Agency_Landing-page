@@ -67,10 +67,10 @@
   right: 8%;
 }
 
-.header_button {
+/* .header_button {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   position: absolute;
   bottom: -144px;
 }
@@ -83,7 +83,7 @@
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
-}
+} */
 
 .header_button-page {
   font-family: "Roboto Condensed", sans-serif;
