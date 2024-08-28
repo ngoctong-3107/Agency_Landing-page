@@ -3,9 +3,51 @@
   background-color: var(--dark);
   color: #fff;
   position: relative;
+  /* overflow-x: hidden; */
 }
 
 .testimonial_title {
   max-width: 455px;
   margin-bottom: 34px;
+}
+
+.testimonial_list_wrapper {
+  max-width: 700px;
+  overflow: hidden;
+  position: absolute;
+  top: 144px;
+  right: 0;
+}
+
+.testimonial_list {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonial_item {
+  padding: 48px;
+  background-color: #417505;
+  min-width: 470px;
+  border-radius: 5px;
+}
+
+.testimonial_item:nth-child(n + 2) {
+  background-color: #9013fe;
+}
+
+.testimonial_item .user {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 107px;
+}
+
+.testimonial_item .username {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: unset;
+  line-height: calc(32 / 24);
+}
+
+.testimonial_item .comment {
+  color: #ffffff80;
 }

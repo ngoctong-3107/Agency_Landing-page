@@ -1,7 +1,7 @@
-.logo {
+.tools {
   margin-block: 320px 103px;
 }
-.logo_wrapper {
+.tools_wrapper {
   border-top: 2px solid var(--dark);
   border-bottom: 2px solid var(--dark);
   padding-block: 8rem;
