@@ -49,3 +49,13 @@
   color: rgba(17, 17, 17, 0.5);
   margin-top: auto;
 }
+
+@media screen and (max-width: 376px) {
+  .blogs_header {
+    gap: 52px;
+    margin-bottom: 60px;
+  }
+  .blogs_list {
+    flex-direction: column;
+  }
+}
