@@ -84,3 +84,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+
+@media screen and (max-width: 376px) {
+  .button_controls {
+    bottom: -45rem;
+  }
+}

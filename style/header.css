@@ -79,3 +79,38 @@
   font-weight: 700;
   margin-left: 2rem;
 }
+
+.icon_menu {
+  display: none;
+}
+
+@media screen and (max-width: 376px) {
+  .header_menu-list {
+    display: none;
+  }
+  .icon_menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header_heading {
+    font-size: 40px;
+    line-height: calc(48 / 40);
+    margin-top: 70px;
+  }
+
+  .header_img_wrapper {
+    left: 20px;
+    top: 560px;
+  }
+
+  .header_img {
+    width: 400px;
+  }
+  .header_img-overlay {
+    width: 330px;
+  }
+  .header_dots {
+    left: 0rem;
+  }
+}
