@@ -55,3 +55,15 @@
 .feature-dots span.active {
   background-color: #9013fe;
 }
+
+@media screen and (max-width: 376px) {
+  .feature_content {
+    margin-bottom: 80px;
+  }
+  .feature_title {
+    margin-bottom: 52px;
+  }
+  .feature_item:not(:first-child) {
+    display: none;
+  }
+}
