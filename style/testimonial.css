@@ -50,3 +50,25 @@
 .testimonial_item .comment {
   color: #ffffff80;
 }
+
+@media screen and (max-width: 376px) {
+  .testimonial {
+    padding-block: 103px 200px;
+  }
+  .testimonial_list_wrapper {
+    top: 330px;
+    right: auto;
+  }
+  .testimonial_item {
+    width: 320px;
+    min-width: unset;
+  }
+  .testimonial_item:nth-child(2) {
+    display: none;
+  }
+  .testimonial_btn {
+    bottom: -70rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
