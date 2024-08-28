@@ -49,7 +49,9 @@
 }
 .portfolio_sidebar_list > li {
   padding: 1rem 1.6rem;
+  transition: 0.2s all linear;
   cursor: pointer;
+  border-radius: 5px;
 }
 .portfolio_sidebar_list > li:hover {
   background-color: var(--dark);
