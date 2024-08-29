@@ -80,8 +80,11 @@
     display: none;
   }
   .testimonial_btn {
-    bottom: -70rem;
+    bottom: -60rem;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .testimonial_item .user {
+    margin-bottom: 50px;
   }
 }

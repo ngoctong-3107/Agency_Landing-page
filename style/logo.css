@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 376px) {
   .tools {
-    margin-block: 80rem 103px;
+    margin-block: 70rem 103px;
   }
   .tools_wrapper {
     flex-direction: column;
