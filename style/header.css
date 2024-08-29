@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 376px) {
   .header_menu-list {
-    display: block;
+    display: none;
     color: rgba(17, 17, 17, 0.5);
     background-color: #e1cdcd;
     position: absolute;
