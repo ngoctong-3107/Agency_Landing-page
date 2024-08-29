@@ -85,6 +85,20 @@ body {
   letter-spacing: 3px;
 }
 
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff564f;
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 @media screen and (max-width: 376px) {
   .button_controls {
     bottom: -45rem;

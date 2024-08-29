@@ -36,3 +36,19 @@ dropdown_items.forEach((item) => {
     dropdown_value.innerHTML = item.innerHTML;
   });
 });
+
+const btnTop = document.querySelector("#topBtn");
+window.onscroll = function () {
+  scrollFunc();
+};
+function scrollFunc() {
+  if (document.body.scrollTop > 600) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+}
+
+btnTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
