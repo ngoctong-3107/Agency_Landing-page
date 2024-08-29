@@ -27,3 +27,12 @@ portfolio_sidebarItem.forEach((item) =>
     e.target.classList.add("active");
   })
 );
+
+const dropdown_value = document.querySelector(".dropdown-value");
+const dropdown_list = document.querySelector(".dropdown-list");
+const dropdown_items = document.querySelectorAll(".dropdown-item");
+dropdown_items.forEach((item) => {
+  item.addEventListener("click", () => {
+    dropdown_value.innerHTML = item.innerHTML;
+  });
+});
