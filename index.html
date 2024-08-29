@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Inknut+Antiqua:wght@400;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
+    <!-- Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
+
     <title>Agency</title>
   </head>
 
@@ -86,28 +92,55 @@
             intention, to make
             the being.</p>
         </div>
-        <div class="feature_list">
-          <div class="feature_item">
-            <img src="./images/feature_white-label.svg" alt="">
-            <h3 class="feature_item_title section-subtitle">White Label</h3>
-            <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
-              contrary to my first intention, to make the
-              being.</p>
-          </div>
-          <div class="feature_item">
-            <img src="./images/feature_code-export.svg" alt="">
-            <h3 class="feature_item_title section-subtitle">Code export</h3>
-            <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
-              contrary to my first intention, to make the
-              being.</p>
-          </div>
-        </div>
 
-        <div class="feature-dots">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="feature_list swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_white-label.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">White Label</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_code-export.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">Code export</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_white-label.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">White Label</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_code-export.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">Code export</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_white-label.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">White Label</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_code-export.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">Code export</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -333,33 +366,26 @@
       </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      const icon_menu = document.querySelector(".icon_menu")
-      const icon_close = document.querySelector(".icon_close")
-      const header_menulist = document.querySelector(".header_menu-list")
-      const menu_items = document.querySelectorAll(".header_menu-list > li")
-
-      icon_menu.addEventListener("click", () => {
-        header_menulist.style.display = "block"
-        header_menulist.style.right = 0
-      })
-      icon_close.addEventListener("click", () => {
-        header_menulist.style.right = "-50%"
-      })
-      menu_items.forEach((item) => {
-        item.addEventListener("click", () => {
-          header_menulist.style.right = "-50%"
-        })
-      })
-
-      const portfolio_sidebarItem = document.querySelectorAll(".portfolio_sidebar_list > li")
-
-      portfolio_sidebarItem.forEach(item => item.addEventListener("click", function (e) {
-        portfolio_sidebarItem.forEach(m => m.classList.remove("active"));
-        e.target.classList.add("active")
-      }))
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
+    <script src="./index.js"></script>
   </body>
 
 </html>
