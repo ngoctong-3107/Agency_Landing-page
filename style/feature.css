@@ -55,3 +55,15 @@
 .feature-dots span.active {
   background-color: #9013fe;
 }
+.swiper-pagination-bullet-active {
+  background-color: #69dd97;
+}
+
+@media screen and (max-width: 376px) {
+  .feature_content {
+    margin-bottom: 80px;
+  }
+  .feature_title {
+    margin-bottom: 52px;
+  }
+}

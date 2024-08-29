@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&family=Inknut+Antiqua:wght@400;900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
+
     <title>Agency</title>
   </head>
 
@@ -18,20 +26,22 @@
         <div class="header_menu">
           <img src="./images/logo.png" alt="logo" class="logo">
           <ul class="header_menu-list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <ion-icon name="close-outline" class="icon_close"></ion-icon>
+            <li><a href="#feature">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#footer">Contact</a></li>
           </ul>
+          <img src="./images/icon_menu.svg" class="icon_menu" alt="">
         </div>
         <h1 class="header_heading">We Create Amazing Sites With Ease</h1>
         <div class="header_desc">
           <img src="./images/Object.svg" alt="" class="header_desc-icon">
           <p class="header_desc-text section-subtitle">A peep at some distant orb has power to raise and purify</p>
         </div>
-        <div>
-          <span class="header_img-overlay"></span>
-          <img src="./images/header_img.png" alt="" class="header_img" />
+        <div class="header_img_wrapper">
           <img src="./images/dots.png" alt="" class="header_dots">
+          <img src="./images/Rectangle.png" class="header_img-overlay" alt="">
+          <img src="./images/header_img.png" alt="" class="header_img" />
         </div>
 
         <div class="header_button button_controls">
@@ -70,7 +80,7 @@
       </div>
     </section>
 
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="container">
         <div class="feature_content section-header">
           <h2 class="feature_title section-title">Our Core Features</h2>
@@ -82,28 +92,55 @@
             intention, to make
             the being.</p>
         </div>
-        <div class="feature_list">
-          <div class="feature_item">
-            <img src="./images/feature_white-label.svg" alt="">
-            <h3 class="feature_item_title section-subtitle">White Label</h3>
-            <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
-              contrary to my first intention, to make the
-              being.</p>
-          </div>
-          <div class="feature_item feature_item--green">
-            <img src="./images/feature_code-export.svg" alt="">
-            <h3 class="feature_item_title section-subtitle">Code export</h3>
-            <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
-              contrary to my first intention, to make the
-              being.</p>
-          </div>
-        </div>
 
-        <div class="feature-dots">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="feature_list swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_white-label.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">White Label</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_code-export.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">Code export</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_white-label.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">White Label</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_code-export.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">Code export</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_white-label.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">White Label</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+            <div class="feature_item swiper-slide">
+              <img src="./images/feature_code-export.svg" alt="">
+              <h3 class="feature_item_title section-subtitle">Code export</h3>
+              <p class="feature_item_desc">Minuteness of the parts formed a great hindrance to my speed, resolved,
+                contrary to my first intention, to make the
+                being.</p>
+            </div>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -124,7 +161,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio_wrapper">
           <div class="portfolio_sidebar">
@@ -136,6 +173,19 @@
               <li>Branding</li>
               <li>Products</li>
             </ul>
+
+            <div class="dropdown">
+              <div class="dropdown-select">
+                <span class="dropdown-value">All</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
+              </div>
+              <div class="dropdown-list">
+                <div class="dropdown-item">Design</div>
+                <div class="dropdown-item">Development</div>
+                <div class="dropdown-item">Branding</div>
+                <div class="dropdown-item">Products</div>
+              </div>
+            </div>
           </div>
           <div class="portfolio_list">
             <div class="portfolio_list_item">
@@ -164,18 +214,18 @@
       <div class="container">
         <h2 class="testimonial_title section-title ">What Our Clients Say</h2>
         <p class="testimonial_caption section-subtitle">Testimonials</p>
-        <div class="button_controls">
-          <div class="button_control">
+        <div class="testimonial_btn button_controls">
+          <div class="button_control swiper-button-prev">
             <img src="./images/triangle-prev.png" alt="" />
           </div>
-          <div class="button_control">
+          <div class="button_control swiper-button-next">
             <img src="./images/triangle-next.png" alt="" />
           </div>
         </div>
 
         <div class="testimonial_list_wrapper">
           <div class="testimonial_list">
-            <div class="testimonial_item">
+            <!-- <div class="testimonial_item">
               <div class="user">
                 <img src="./images/user1.svg" alt="" class="user_avatar" />
                 <div class="user_info">
@@ -204,6 +254,119 @@
                 roots.
                 The roots were
                 revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+            </div> -->
+
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user1.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Helena Brauer</h3>
+                        <span class="user_company">Apple Inc.</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user2.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Kay Totleben</h3>
+                        <span class="user_company">Microsoft</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user1.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Helena Brauer</h3>
+                        <span class="user_company">Apple Inc.</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user2.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Kay Totleben</h3>
+                        <span class="user_company">Microsoft</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user1.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Helena Brauer</h3>
+                        <span class="user_company">Apple Inc.</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user2.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Kay Totleben</h3>
+                        <span class="user_company">Microsoft</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -271,10 +434,10 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="signup section-header">
-          <h2 class="signup-title section-title">Newsletter
+          <h2 class="signup-title section-title">News letter
             Sign Up</h2>
 
           <div class="form_subscribe">
@@ -316,6 +479,44 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        breakpoints: {
+          375: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+        effect: "coverflow",
+        grabCursor: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./index.js"></script>
   </body>
 
 </html>

@@ -14,3 +14,13 @@
 .projects_desc {
   color: rgba(17, 17, 17, 0.5);
 }
+
+@media screen and (max-width: 376px) {
+  .projects {
+    margin-block: 78px 50px;
+  }
+  .projects_header {
+    padding-bottom: 5rem;
+    gap: 36px;
+  }
+}
