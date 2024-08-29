@@ -69,7 +69,7 @@
 .header_dots {
   position: absolute;
   top: -80px;
-  left: 400px;
+  left: 20rem;
 }
 
 .header_button-page {
@@ -89,7 +89,8 @@
   .header_menu-list {
     display: none;
     color: rgba(17, 17, 17, 0.5);
-    background-color: #e1cdcd;
+    /* background-color: #e1cdcd; */
+    background-color: #9013fe;
     position: absolute;
     top: 0;
     right: -50%;
@@ -107,10 +108,9 @@
   }
   .header_menu-list > li {
     padding: 10px 20px;
-    /* margin-bottom: 10px; */
   }
   .header_menu-list > li:hover {
-    background-color: #bbacac;
+    background-color: #842dcf;
   }
   .icon_menu {
     display: block;

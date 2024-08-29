@@ -21,7 +21,7 @@
 }
 .portfolio_list_item:nth-child(2) {
   color: #fff;
-  margin-block: 47px 81px;
+  margin-block: 100px 81px;
 }
 .portfolio_title {
   font-size: 4rem;
@@ -35,6 +35,9 @@
 .portfolio_item_bg {
   position: absolute;
   z-index: -1;
+}
+.portfolio_list_item:nth-child(2) .portfolio_item_img {
+  width: 520px;
 }
 
 .portfolio-btn {
