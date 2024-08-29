@@ -215,17 +215,17 @@
         <h2 class="testimonial_title section-title ">What Our Clients Say</h2>
         <p class="testimonial_caption section-subtitle">Testimonials</p>
         <div class="testimonial_btn button_controls">
-          <div class="button_control">
+          <div class="button_control swiper-button-prev">
             <img src="./images/triangle-prev.png" alt="" />
           </div>
-          <div class="button_control">
+          <div class="button_control swiper-button-next">
             <img src="./images/triangle-next.png" alt="" />
           </div>
         </div>
 
         <div class="testimonial_list_wrapper">
           <div class="testimonial_list">
-            <div class="testimonial_item">
+            <!-- <div class="testimonial_item">
               <div class="user">
                 <img src="./images/user1.svg" alt="" class="user_avatar" />
                 <div class="user_info">
@@ -254,6 +254,119 @@
                 roots.
                 The roots were
                 revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+            </div> -->
+
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user1.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Helena Brauer</h3>
+                        <span class="user_company">Apple Inc.</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user2.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Kay Totleben</h3>
+                        <span class="user_company">Microsoft</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user1.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Helena Brauer</h3>
+                        <span class="user_company">Apple Inc.</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user2.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Kay Totleben</h3>
+                        <span class="user_company">Microsoft</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user1.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Helena Brauer</h3>
+                        <span class="user_company">Apple Inc.</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial_item">
+                    <div class="user">
+                      <img src="./images/user2.svg" alt="" class="user_avatar" />
+                      <div class="user_info">
+                        <h3 class="username section-subtitle">Kay Totleben</h3>
+                        <span class="user_company">Microsoft</span>
+                      </div>
+                    </div>
+                    <div class="comment">What looked like a small patch of purple grass, above five feet square, was
+                      moving
+                      across the sand in their direction.
+                      When it came near enough he perceived that it was not grass; there were no blades, but only purple
+                      roots.
+                      The roots were
+                      revolving, for each small plant in the whole patch, like the spokes of a rimless wheel.</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -382,6 +495,24 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+      });
+
+      var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+        effect: "coverflow",
+        grabCursor: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
