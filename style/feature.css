@@ -15,7 +15,7 @@
 .feature_list {
   display: flex;
   gap: 3rem;
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
 }
 
 .feature_item {
@@ -54,6 +54,9 @@
 
 .feature-dots span.active {
   background-color: #9013fe;
+}
+.swiper-pagination-bullet {
+  background-color: #60dc92;
 }
 .swiper-pagination-bullet-active {
   background-color: #69dd97;
