@@ -31,21 +31,33 @@ portfolio_sidebarItem.forEach((item) =>
 const dropdown_value = document.querySelector(".dropdown-value");
 const dropdown_list = document.querySelector(".dropdown-list");
 const dropdown_items = document.querySelectorAll(".dropdown-item");
+const dropdown_select = document.querySelector(".dropdown-select");
 dropdown_items.forEach((item) => {
   item.addEventListener("click", () => {
     dropdown_value.innerHTML = item.innerHTML;
+    dropdown_list.style.display = "none";
   });
+});
+dropdown_select.addEventListener("click", () => {
+  dropdown_list.style.display = "block";
 });
 
 const btnTop = document.querySelector("#topBtn");
 window.onscroll = function () {
   scrollFunc();
+  closeMenuFunc();
 };
 function scrollFunc() {
-  if (document.body.scrollTop > 600) {
+  if (document.body.scrollTop > 1000) {
     btnTop.style.display = "block";
   } else {
     btnTop.style.display = "none";
+  }
+}
+function closeMenuFunc() {
+  if (document.body.scrollTop > 250 && screen.width <= 500) {
+    header_menulist.style.right = "-50%";
+    header_menulist.style.display = "none";
   }
 }
 
