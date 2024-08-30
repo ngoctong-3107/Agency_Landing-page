@@ -76,6 +76,9 @@
     width: 320px;
     min-width: unset;
   }
+  .swiper-slide {
+    /* width: 300px !important; */
+  }
   .testimonial_item:nth-child(2) {
     display: none;
   }
